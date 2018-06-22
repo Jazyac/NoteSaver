@@ -12,13 +12,13 @@
 ]) !!}
 
     <div class="form-group">
-        {{ Form::label('name', 'Name') }}
-        {!! Form::text('name', null, ['class' => 'form-control']) !!}
+     
+        {!! Form::text('name', null, ['class' => 'form-control','style'=>'border: none;border-color: transparent; font-weight: bold;text-align: center;']) !!}
     </div>
 
     <div class="form-group">
-    {{ Form::label('content', 'Contents') }}
-        {!! Form::textarea('content', null, ['class' => 'form-control']) !!}
+  
+        {!! Form::textarea('content', null, ['class' => 'form-control','style'=>'border: none;border-color: transparent;']) !!}
     </div>
 
 
