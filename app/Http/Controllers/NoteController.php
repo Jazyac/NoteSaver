@@ -20,14 +20,14 @@ class NoteController extends Controller
         $this->middleware('auth');
     }
 
-    public function boot()
-    {
-      $this->registerPolicies();
+    // public function boot()
+    // {
+    //   $this->registerPolicies();
        
-      Gate::define('autherizeUser', function ($note) {
-        return Auth::id() == $note->user;
-      });
-    }
+    //   Gate::define('autherizeUser', function ($note) {
+    //     return Auth::id() == $note->user;
+    //   });
+    // }
 
     /**
      * Display a listing of the resource.
@@ -101,8 +101,8 @@ class NoteController extends Controller
     {
         $note = Note::findOrFail($id);
 
-        if (Gate::allows('autherizeUser',  $note)) {
-
+        // if (Gate::allows('autherizeUser',  $note)) {
+            if (Auth::id()==$note->user) {
            
 
             return view('notes.edit')->withNote($note);
@@ -159,8 +159,8 @@ class NoteController extends Controller
     public function destroy($id)
     {
         $note = Note::findOrFail($id);
-        if (Gate::allows('autherizeUser',  $note)) {
-
+        // if (Gate::allows('autherizeUser',  $note)) {
+            if (Auth::id()==$note->user) {
            
         $note->delete();
     
