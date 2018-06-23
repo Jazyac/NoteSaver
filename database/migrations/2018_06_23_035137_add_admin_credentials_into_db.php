@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-
+use Illuminate\Support\Facades\Hash;
 class AddAdminCredentialsIntoDb extends Migration
 {
     /**
@@ -14,9 +14,9 @@ class AddAdminCredentialsIntoDb extends Migration
     public function up()
     {
         //
-
+$pass= Hash::make('passpass');
         DB::table('users')->insert([
-            ['name' => 'admin', 'email' => 'admin@email.com', 'password' => 'passpass', 'role' => 'admin']
+            ['name' => 'admin', 'email' => 'admin@email.com', 'password' => $pass, 'role' => 'admin']
 
             ]);
         
