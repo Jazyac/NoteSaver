@@ -26,10 +26,11 @@ class AdminController extends Controller
     }
 
 
-    public function showOptions(){
+    public function switch()
+    {
+        //
 
 
-
-
+return redirect()-> to('admin');
     }
 }
