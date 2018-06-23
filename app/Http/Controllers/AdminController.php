@@ -10,16 +10,26 @@ class AdminController extends Controller
 
     public function __construct()
     {
+
         $this->middleware('auth');
-        
+        $this->middleware('admin');
+
     }
 
     public function index()
     {
-        //
-        $userID = Auth::id();
-     
+ 
+    
+
+     return view('admin.index');
   
-  
+    }
+
+
+    public function showOptions(){
+
+
+
+
     }
 }
