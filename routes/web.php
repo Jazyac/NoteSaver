@@ -19,3 +19,4 @@ Auth::routes();
 
 Route::get('/home', 'NoteController@index');
 Route::resource('/notes', 'NoteController');
+Route::resource('/admin', 'AdminController');
