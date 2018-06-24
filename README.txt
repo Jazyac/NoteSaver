@@ -9,6 +9,12 @@ http://notesaver.herokuapp.com/public/
 
 The app is created using Laravel.
 
+
+
+****
+The app now has an admin backend panel as well, where an admin account can change configurations from the front end, without going through the code.
+Currently has implementation of changing the color scheme of the website. Other functionalities are under progress.
+****
 The following reference material was used in its creation-
 https://scotch.io/tutorials/simple-and-easy-laravel-login-authentication
 https://stackoverflow.com/questions/459312/setting-up-foreign-keys-in-phpmyadmin
