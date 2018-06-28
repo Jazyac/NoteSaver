@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 
 use Illuminate\Support\Facades\Auth;
-class AdminMiddleware
+class UserMiddleware
 {
     /**
      * Handle an incoming request.
@@ -19,9 +19,9 @@ class AdminMiddleware
         
     
 
-        if(Auth::user()->role == 'admin'){
+        if(Auth::user()->role != 'admin'){
 
-            return redirect("admin");
+            return redirect("notes");
 
             
         }
