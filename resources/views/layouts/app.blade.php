@@ -7,7 +7,7 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link type="image/x-icon" rel="shortcut icon" href="{{ asset('Edit_Notepad_Icon.svg') }}">
+    <link type="image/x-icon" rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Edit_Notepad_Icon.svg/1024px-Edit_Notepad_Icon.svg.png">
     <title>Note Saver</title>
 
     <!-- Scripts -->
@@ -27,7 +27,8 @@
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                Note Saver
+                <img class="logoImage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Edit_Notepad_Icon.svg/1024px-Edit_Notepad_Icon.svg.png">
+           
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>

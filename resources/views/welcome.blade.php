@@ -4,15 +4,17 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link type="image/x-icon" rel="shortcut icon" href="{{ asset('Edit_Notepad_Icon.svg') }}">
+        <link type="image/x-icon" rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Edit_Notepad_Icon.svg/1024px-Edit_Notepad_Icon.svg.png">
         <title>Note Saver</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
+        <link href="css/app.css" rel="stylesheet" type="text/css">
+        
         <!-- Styles -->
         <style>
             html, body {
+               
                 background-color: #fff;
                 color: #636b6f;
                 font-family: 'Raleway', sans-serif;
@@ -68,7 +70,9 @@
         <div class="flex-center position-ref full-height">
            
             <div class="content">
+            <img class="logoImage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Edit_Notepad_Icon.svg/1024px-Edit_Notepad_Icon.svg.png">
                 <div class="title m-b-md">
+                
                     Note Saver
                 </div>
 
