@@ -34,4 +34,6 @@ The database used is MySql and is deployed at the following free database provid
 https://db4free.net/
 
 ***
+Favicon-https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Edit_Notepad_Icon.svg/1024px-Edit_Notepad_Icon.svg.png
+***
 (App under developement)
