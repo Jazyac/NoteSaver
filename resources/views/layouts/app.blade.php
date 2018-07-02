@@ -7,7 +7,7 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
+    <link type="image/x-icon" rel="shortcut icon" href="{{ asset('Edit_Notepad_Icon.svg') }}">
     <title>Note Saver</title>
 
     <!-- Scripts -->
