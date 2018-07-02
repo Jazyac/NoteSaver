@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link type="image/x-icon" rel="shortcut icon" href="{{ asset('Edit_Notepad_Icon.svg') }}">
         <title>Note Saver</title>
 
         <!-- Fonts -->
