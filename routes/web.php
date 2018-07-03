@@ -21,3 +21,4 @@ Route::get('/home', 'NoteController@index');
 Route::resource('/notes', 'NoteController');
 Route::get('/admin', 'AdminController@index');
 Route::post('/admin/switch', ['as' => 'admin.switch', 'uses' => 'AdminController@switch']);
+Route::get('/notes/{note}/email', ['as' => 'notes.email', 'uses' => 'NoteController@email']);

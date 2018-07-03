@@ -182,4 +182,29 @@ class NoteController extends Controller
        
 
     }
+
+
+    public function email($id)
+        {
+
+            $note = Note::findOrFail($id);
+         
+                if (Auth::id()==$note->user) {
+               
+          
+        
+            Session::flash('flash_message', 'Email button pressed.');
+        
+            return redirect()->route('notes.index');
+            }
+            else{
+                Session::flash('flash_message', 'Somehthing went wrong :( .');
+            
+    
+                return redirect()-> to('notes');
+            }
+
+        
+
+    }
 }

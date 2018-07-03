@@ -15,6 +15,7 @@
             <td>{{ str_limit($value->content, $limit = 100, $end = '...') }} </td>
             
             <td><a href="{{ route('notes.edit',$value->id) }}" class="btn btn-primary">Continue...</a> </td>
+            <td><a href="{{ route('notes.email',$value->id) }}" class="btn btn-warning">Email Me(In Progress)</a> </td>
             <td>
         {!! Form::open([
             'method' => 'DELETE',
