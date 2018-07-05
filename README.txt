@@ -36,6 +36,6 @@ https://db4free.net/
 ***
 Favicon-https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Edit_Notepad_Icon.svg/1024px-Edit_Notepad_Icon.svg.png
 ***
-Added barebones smtp sendgrid implementation, currently only working in localhost.
+Added barebones smtp sendgrid implementation.
 ***
 (App under developement)
