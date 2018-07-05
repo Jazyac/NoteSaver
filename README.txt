@@ -36,6 +36,9 @@ https://db4free.net/
 ***
 Favicon-https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Edit_Notepad_Icon.svg/1024px-Edit_Notepad_Icon.svg.png
 ***
-Added barebones smtp sendgrid implementation.
+Users' notes can now be emailed to there emali address. Sendgrid is being used for the purpose.
+References-
+http://justlaravel.com/sending-emails-using-sendgrid-laravel/
+code.tutsplus.com/tutorials/how-to-send-emails-in-laravel--cms-30046
 ***
 (App under developement)
