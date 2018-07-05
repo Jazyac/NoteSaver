@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Session;
 use Illuminate\Support\Facades\Gate;
+use App\Http\Controllers\Controller;
+use App\Mail\NoteEmail;
+use Illuminate\Support\Facades\Mail;
 class NoteController extends Controller
 {
 
@@ -191,12 +194,20 @@ class NoteController extends Controller
          
                 if (Auth::id()==$note->user) {
                
+
+                    $noteInfoObject = new \stdClass();
+                    $noteInfoObject->noteContent = $note->content;
+                    $noteInfoObject->noteName = $note->name;
+                   
+                    
+                    Mail::to(Auth::user()->email)->send(new NoteEmail($noteInfoObject));
           
         
-            Session::flash('flash_message', 'Email button pressed.');
+            Session::flash('flash_message', 'Email Sent!');
         
             return redirect()->route('notes.index');
             }
+
             else{
                 Session::flash('flash_message', 'Somehthing went wrong :( .');
             
