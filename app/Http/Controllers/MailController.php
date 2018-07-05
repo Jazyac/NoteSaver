@@ -16,6 +16,6 @@ class MailController extends Controller
         $objDemo->receiver = 'ReceiverUserName';
  
         Mail::to("cvd01553@lakqs.com")->send(new DemoEmail($objDemo));
-      echo 'asdasd';
+     
     }
 }
