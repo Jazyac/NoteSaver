@@ -10,7 +10,7 @@ class MailController extends Controller
     public function send()
     {
         $objDemo = new \stdClass();
-        $objDemo->demo_one = 'Demo One ';
+        $objDemo->demo_one = 'Demo One value ';
         $objDemo->demo_two = 'Demo Two Value';
         $objDemo->sender = 'SenderUserName';
         $objDemo->receiver = 'ReceiverUserName';
