@@ -38,19 +38,7 @@ return [
             'database' => env('DB_DATABASE', database_path('database.sqlite')),
             'prefix' => '',
         ],
-        // 'mysql' => [
-        //     'driver' => 'mysql',
-        //     'host' => 'localhost',
-        //       'database' => 'laravelnotesaver',
-        //     'username' => 'root',
-        //     'password' => 'pass',
-        //     'unix_socket' => env('DB_SOCKET', ''),
-        //     'charset' => 'utf8mb4',
-        //     'collation' => 'utf8mb4_unicode_ci',
-        //     'prefix' => '',
-        //     'strict' => true,
-        //     'engine' => null,
-        // ],
+
         'mysql' => [
             'driver' => 'mysql',
             'host' => env('DB_HOST'),

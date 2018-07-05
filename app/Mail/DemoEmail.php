@@ -35,7 +35,7 @@ class DemoEmail extends Mailable
      */
     public function build()
     {
-        return $this->from('sender.notesaver@outlook.com')
+        return $this->from(env('MAIL_FROM_ADDRESS'))
                     ->view('mail.demo')
                     ->text('mail.demo_plain')
                     ->with(
