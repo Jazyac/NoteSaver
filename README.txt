@@ -30,9 +30,8 @@ https://stackoverflow.com/questions/21305049/heroku-how-can-you-check-heroku-err
 https://stackoverflow.com/questions/44839648/no-application-encryption-key-has-been-specified-new-laravel-app
 
     
-The database used is MySql and is deployed at the following free database provider(Connection is a bit slow, hence queries take time to carry out.Another solution is being considered)-
-https://db4free.net/
-
+***
+Database being used:PostgreSQL provided by Heroku.
 ***
 Favicon-https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Edit_Notepad_Icon.svg/1024px-Edit_Notepad_Icon.svg.png
 ***
