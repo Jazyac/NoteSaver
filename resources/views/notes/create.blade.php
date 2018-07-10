@@ -17,7 +17,7 @@
 
     <div class="form-group">
    
-        {!! Form::textarea('content', null, ['class' => 'form-control','style'=>'border: none;border-color: transparent;','placeholder'=>'Start typing your note here....']) !!}
+        {!! Form::textarea('content', null, ['class' => 'form-control','style'=>'border: none;border-color: transparent;','placeholder'=>'Sart typing your note here....']) !!}
     </div>
 
 
