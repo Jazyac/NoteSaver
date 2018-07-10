@@ -33,6 +33,10 @@ https://stackoverflow.com/questions/44839648/no-application-encryption-key-has-b
 ***
 Database being used:PostgreSQL provided by Heroku.
 ***
+ADMIN CREDENTIALS-
+admin@email.com
+passpass
+***
 Favicon-https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Edit_Notepad_Icon.svg/1024px-Edit_Notepad_Icon.svg.png
 ***
 Users' notes can now be emailed to there emali address. Sendgrid is being used for the purpose.
