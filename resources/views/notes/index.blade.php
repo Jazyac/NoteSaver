@@ -5,14 +5,14 @@
 <center>
    <a class="btn btn-success btn-block" href="{{ URL::to('notes/create') }}">Start a Note.. </a>
 </center>
+
 <table class="table table-striped table-bordered">
     
     <tbody>
     @foreach($notes as $key => $value)
         <tr>
          
-            <td>{{ $value->name }}</td>
-            <td>{{ str_limit($value->content, $limit = 100, $end = '...') }} </td>
+            <td class="font-weight-bold">{{ $value->name }}</td>
             
             <td><a href="{{ route('notes.edit',$value->id) }}" class="btn btn-primary">Continue...</a> </td>
             <td><a href="{{ route('notes.email',$value->id) }}" class="btn btn-warning">Email Me</a> </td>
