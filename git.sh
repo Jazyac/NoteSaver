@@ -7,5 +7,3 @@ git commit -m "$commitMessage"
 
 git push heroku master
 git push github master
-
-read

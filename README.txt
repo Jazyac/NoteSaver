@@ -40,4 +40,6 @@ References-
 http://justlaravel.com/sending-emails-using-sendgrid-laravel/
 code.tutsplus.com/tutorials/how-to-send-emails-in-laravel--cms-30046
 ***
+Added a script file(git.sh) to automate deployment.
+***
 (App under developement)
