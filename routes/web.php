@@ -18,7 +18,12 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'NoteController@index');
+Route::get('/notes/openStrip', ['as' => 'notes.openStrip', 'uses' => 'NoteController@openStrip']);
+Route::post('/notes/stripURL', ['as' => 'notes.stripURL', 'uses' => 'NoteController@stripURL']);
+
+
 Route::resource('/notes', 'NoteController');
 Route::get('/admin', 'AdminController@index');
 Route::post('/admin/switch', ['as' => 'admin.switch', 'uses' => 'AdminController@switch']);
 Route::get('/notes/{note}/email', ['as' => 'notes.email', 'uses' => 'NoteController@email']);
+

@@ -233,4 +233,19 @@ class NoteController extends Controller
         
 
     }
+
+    public function openStrip(){
+
+        return view('notes.openStrip');
+
+
+
+    }
+
+    public function stripURL(Request $request){
+
+dd($request->getContent());
+
+
+    }
 }
