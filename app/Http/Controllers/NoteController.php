@@ -75,12 +75,27 @@ class NoteController extends Controller
             'content' => 'required'
         ]);
 
-
         $request->request->add(['user'=> Auth::id()]);
         $input =  $request->all();
-        Note::create($input);
+        $savedNote=Note::create($input);
         Session::flash('flash_message', 'Note Saved!');
-    return redirect()-> to('notes');
+        switch($request->saveButton) {
+
+            case 'Save': 
+           
+            return redirect()-> to('notes');
+            break;
+        
+            case 'Save and Email': 
+               
+            
+            return $this->email($savedNote -> id );
+            break;
+        }
+
+
+        
+       
         
     }
 

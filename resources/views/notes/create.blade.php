@@ -21,7 +21,8 @@
     </div>
 
 
- {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
+ {!! Form::submit('Save', ['class' => 'btn btn-primary','name' => 'saveButton']) !!}
+ {!! Form::submit('Save and Email', ['class' => 'btn btn-warning','name' => 'saveButton']) !!}
 
 {!! Form::close() !!}
 
