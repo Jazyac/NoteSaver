@@ -3,8 +3,13 @@
 @section('notePageContent')
 
 <center>
-   <a class="btn btn-success btn-block" href="{{ URL::to('notes/create') }}">Start a Note.. </a>
+    <div>
+   <a  class="btn btn-success halfWidth" href="{{ URL::to('notes/create') }}">Start a Note.. </a>
+   <a class="btn btn-success halfWidth" href="{{ URL::to('notes/create') }}">Strip URL...</a>
+   </div>
 </center>
+
+
 
 <table class="table table-striped table-bordered">
     
