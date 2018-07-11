@@ -5,7 +5,7 @@
 <center>
     <div>
    <a  class="btn btn-success halfWidth" href="{{ URL::to('notes/create') }}">Start a Note.. </a>
-   <a class="btn btn-success halfWidth" href="{{ URL::to('notes/create') }}">Strip URL...</a>
+   <a class="btn btn-success halfWidth" href="{{ URL::to('notes/create') }}">Strip URL(under construction)...</a>
    </div>
 </center>
 
