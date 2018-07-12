@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Gate;
 use App\Http\Controllers\Controller;
 use App\Mail\NoteEmail;
 use Illuminate\Support\Facades\Mail;
+use Goutte\Client;
+use Symfony\Component\DomCrawler\Crawler;
 class NoteController extends Controller
 {
 
@@ -69,6 +71,11 @@ class NoteController extends Controller
      */
     public function store(Request $request)
     {
+
+
+
+// dd($request);
+
 
         $this->validate($request, [
             'name' => 'required',
@@ -244,7 +251,28 @@ class NoteController extends Controller
 
     public function stripURL(Request $request){
 
-dd($request->getContent());
+
+$url=$request->url;
+$client= new Client();
+$crawler = $client->request('GET', $url);
+$crawler->filter('title')->each(function( $node) use( &$name){
+    
+    
+    $name=$node->text();
+    
+    
+});
+
+
+
+$request->request->add(['name' => substr($name, 0, 29).'...']);
+$request->request->add(['content' => $url]);
+$request->request->add(['saveButton' => 'Save']);
+
+return $this->store($request);
+
+
+
 
 
     }
