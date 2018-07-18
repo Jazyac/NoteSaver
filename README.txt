@@ -46,4 +46,9 @@ code.tutsplus.com/tutorials/how-to-send-emails-in-laravel--cms-30046
 ***
 Added a script file(git.sh) to automate deployment.
 ***
+Added an option to save a webpage's URL along with its name fetched using Goutte.
+https://github.com/FriendsOfPHP/Goutte
+
+Further scrapping functionality might be added in the future.
+***
 (App under developement)

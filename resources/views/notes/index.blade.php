@@ -4,8 +4,8 @@
 
 <center>
     <div>
-   <a  class="btn btn-success halfWidth" href="{{ URL::to('notes/create') }}">Start a Note.. </a>
-   <a class="btn btn-success halfWidth" href="{{ route('notes.openStrip') }}">Strip URL(under construction)...</a>
+   <a  class="btn btn-success halfWidth" href="{{ URL::to('notes/create') }}">Start a Note... </a>
+   <a class="btn btn-success halfWidth" href="{{ route('notes.openStrip') }}">Save Webpage Info...</a>
    </div>
 </center>
 
