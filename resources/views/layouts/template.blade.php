@@ -9,7 +9,11 @@
 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-<a class="navbar-brand" href="{{ URL::to('notes') }}">Notes.</a>
+    <div class="centerText">
+
+    <a class="navbar-brand" href="{{ URL::to('notes') }}">My Notes</a>
+    </div>
+
 </nav>
 </div>
 

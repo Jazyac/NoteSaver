@@ -29,6 +29,7 @@ https://stackoverflow.com/questions/31665706/laravel-localhost-works-but-heroku-
 https://stackoverflow.com/questions/21305049/heroku-how-can-you-check-heroku-error-logs
 https://stackoverflow.com/questions/44839648/no-application-encryption-key-has-been-specified-new-laravel-app
 
+
     
 ***
 Database being used:PostgreSQL provided by Heroku.
@@ -38,6 +39,9 @@ admin@email.com
 passpass
 ***
 Favicon-https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Edit_Notepad_Icon.svg/1024px-Edit_Notepad_Icon.svg.png
+Github icon links-
+http://tholman.com/github-corners/
+https://assets-cdn.github.com/images/modules/open_graph/github-mark.png
 ***
 Users' notes can now be emailed to there emali address. Sendgrid is being used for the purpose.
 References-
@@ -51,4 +55,5 @@ https://github.com/FriendsOfPHP/Goutte
 
 Further scrapping functionality might be added in the future.
 ***
+
 (App under developement)

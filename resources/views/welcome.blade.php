@@ -81,15 +81,21 @@
                 @if (Route::has('login'))
           
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/home') }}">My Notes</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
+                        
+                        <h6 ><a class="blackFontColor" href="{{ route('login') }}">Login</a> or <a class="blackFontColor" href="{{ route('register') }}">Register</a> to start...</h6>
+                       
                     @endauth
            
             @endif
 
                 </div>
+
+            <a href="https://github.com/Jazyac/NoteSaver" target="_blank">
+              <img class="githubLink" src="https://assets-cdn.github.com/images/modules/open_graph/github-mark.png" >
+        </a>
+
             </div>
         </div>
     </body>
