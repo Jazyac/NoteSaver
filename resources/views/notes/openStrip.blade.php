@@ -16,7 +16,7 @@
     </div>
 
   
- {!! Form::submit('Strip', ['class' => 'btn btn-primary']) !!}
+ {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
 
 
 {!! Form::close() !!}
