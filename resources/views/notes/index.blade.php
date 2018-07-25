@@ -17,9 +17,11 @@
     @foreach($notes as $key => $value)
         <tr>
          
-            <td class="font-weight-bold">{{ $value->name }}</td>
+        
+
+            <td><a href="{{ route('notes.edit',$value->id) }}" >{{ $value->name }}</a> </td>   
             
-            <td><a href="{{ route('notes.edit',$value->id) }}" class="btn btn-primary">Continue...</a> </td>
+           
             <td><a href="{{ route('notes.email',$value->id) }}" class="btn btn-warning">Email Me</a> </td>
             <td>
         {!! Form::open([
