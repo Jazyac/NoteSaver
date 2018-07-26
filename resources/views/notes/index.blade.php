@@ -22,18 +22,32 @@
             <td><a href="{{ route('notes.edit',$value->id) }}" >{{ $value->name }}</a> </td>   
             
            
-            <td><a href="{{ route('notes.email',$value->id) }}" class="btn btn-warning">Email Me</a> </td>
-            <td>
-        {!! Form::open([
+            <td >
+                <div class="tdNoteTableControls">
+            <a href="{{ route('notes.email',$value->id) }}" class="btn btn-outline-warning"><span class="glyphicon glyphicon-envelope"></span></a> 
+           <br>
+            {!! Form::open([
             'method' => 'DELETE',
             'route' => ['notes.destroy', $value->id]
         ]) !!}
-            {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
+           
+        
+        {!!
+            Form::macro('deleteIconButton', function()
+{
+    return '<button type="submit" value="Delete" class="btn btn-outline-danger glyphicon glyphicon-trash">';
+});
+        
+        !!}
+
+    
+        {!! Form::deleteIconButton()!!}
+        
         {!! Form::close() !!}
-   
-            
-            
+</div>
             </td>
+
+   
           
             
   
