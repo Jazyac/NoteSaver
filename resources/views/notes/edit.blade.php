@@ -1,12 +1,6 @@
-@extends('layouts.template')
+@extends('layouts.parentNoteHead')
 
 @section('notePageContent')
-
-<div class="container">
-
-
-<a style="float: left;" href="{{ URL::to('notes') }}"><span class="glyphicon glyphicon-arrow-left"></span></a>
-   
 
 {!! Form::model($note, [
     'method' => 'PATCH',
@@ -28,5 +22,4 @@
 
 {!! Form::close() !!}
 
-</div>
 @endsection

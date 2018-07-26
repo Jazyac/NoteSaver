@@ -45,7 +45,7 @@
 @endif
 
 
-            @yield('notePageContent')
+            @yield('parentNotePageContent')
 
             </div>
         </div>

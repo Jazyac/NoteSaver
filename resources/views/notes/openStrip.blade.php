@@ -1,8 +1,8 @@
-@extends('layouts.template')
+@extends('layouts.parentNoteHead')
 
 @section('notePageContent')
 
-<div class="container">
+
 
 
 
@@ -21,5 +21,5 @@
 
 {!! Form::close() !!}
 
-</div>
+
 @endsection

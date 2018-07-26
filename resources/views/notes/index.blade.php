@@ -1,6 +1,6 @@
 @extends('layouts.template')
 
-@section('notePageContent')
+@section('parentNotePageContent')
 
 <center>
     <div>

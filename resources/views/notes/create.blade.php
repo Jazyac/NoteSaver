@@ -1,10 +1,6 @@
-@extends('layouts.template')
+@extends('layouts.parentNoteHead')
 
 @section('notePageContent')
-
-<div class="container">
-
-<a style="float: left;" href="{{ URL::to('notes') }}"><span class="glyphicon glyphicon-arrow-left"></span></a>
 
 {!! Form::open([
     'route' => 'notes.store'
@@ -26,5 +22,5 @@
 
 {!! Form::close() !!}
 
-</div>
+
 @endsection
