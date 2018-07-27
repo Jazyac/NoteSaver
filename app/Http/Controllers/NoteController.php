@@ -218,6 +218,40 @@ class NoteController extends Controller
 
     }
 
+    public function download($id)
+    {
+
+        $note = Note::findOrFail($id);
+     
+            if (Auth::id()==$note->user) {
+           
+                $name= $note->name;
+                $content=$note->content;
+
+                header("Content-type: text/plain");
+header("Content-Disposition: attachment; filename=".$name.".txt");
+ 
+
+echo  $content;
+
+
+        }
+
+        else{
+            Session::flash('flash_message', 'Somehthing went wrong :( .');
+        
+
+            return redirect()-> to('notes');
+        }
+
+    
+
+}
+
+
+
+
+
     public function openStrip(){
 
         return view('notes.openStrip');

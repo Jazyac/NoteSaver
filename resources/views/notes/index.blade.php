@@ -25,7 +25,10 @@
             <td >
                 <div class="tdNoteTableControls">
             <a href="{{ route('notes.email',$value->id) }}" class="btn btn-outline-warning"><span class="glyphicon glyphicon-envelope"></span></a> 
-           <br>
+    
+ <a href="{{ route('notes.download',$value->id) }}" class="btn btn-outline-success"><span class="glyphicon glyphicon-download"></span></a> 
+ <br>
+
             {!! Form::open([
             'method' => 'DELETE',
             'route' => ['notes.destroy', $value->id]
@@ -35,7 +38,7 @@
         {!!
             Form::macro('deleteIconButton', function()
 {
-    return '<button type="submit" value="Delete" class="btn btn-outline-danger glyphicon glyphicon-trash">';
+    return '<button type="submit" value="Delete" class="btn btn-outline-danger glyphicon glyphicon-trash"></button>';
 });
         
         !!}
@@ -44,6 +47,9 @@
         {!! Form::deleteIconButton()!!}
         
         {!! Form::close() !!}
+        
+
+
 </div>
             </td>
 
