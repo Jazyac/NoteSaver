@@ -55,5 +55,7 @@ https://github.com/FriendsOfPHP/Goutte
 
 Further scrapping functionality might be added in the future.
 ***
+Notes can now be downloaded on local computer
+***
 
 (App under developement)
