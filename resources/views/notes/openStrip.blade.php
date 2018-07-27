@@ -1,4 +1,4 @@
-@extends('layouts.parentNoteHead')
+@extends('layouts.parentNote')
 
 @section('notePageContent')
 
@@ -16,10 +16,7 @@
     </div>
 
   
- {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
 
-
-{!! Form::close() !!}
 
 
 @endsection

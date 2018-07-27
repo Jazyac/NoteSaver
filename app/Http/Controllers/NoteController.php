@@ -26,14 +26,6 @@ class NoteController extends Controller
         $this->middleware('checkIfAdmin');
     }
 
-    // public function boot()
-    // {
-    //   $this->registerPolicies();
-       
-    //   Gate::define('autherizeUser', function ($note) {
-    //     return Auth::id() == $note->user;
-    //   });
-    // }
 
     /**
      * Display a listing of the resource.
@@ -86,22 +78,8 @@ class NoteController extends Controller
         $input =  $request->all();
         $savedNote=Note::create($input);
         Session::flash('flash_message', 'Note Saved!');
-        switch($request->saveButton) {
+        return redirect()-> to('notes');
 
-            case 'Save': 
-           
-            return redirect()-> to('notes');
-            break;
-        
-            case 'Save and Email': 
-               
-            
-            return $this->email($savedNote -> id );
-            break;
-        }
-
-
-        
        
         
     }
@@ -127,7 +105,7 @@ class NoteController extends Controller
     {
         $note = Note::findOrFail($id);
 
-        // if (Gate::allows('autherizeUser',  $note)) {
+
             if (Auth::id()==$note->user) {
            
 
@@ -140,7 +118,6 @@ class NoteController extends Controller
             return redirect()-> to('notes');
         }
 
-   //     dd($note);
        
     }
 
@@ -170,7 +147,7 @@ class NoteController extends Controller
 
     Session::flash('flash_message', 'Note Saved.');
 
-    return redirect()->back();
+    return redirect()->to('notes');
 
 
 
@@ -185,7 +162,7 @@ class NoteController extends Controller
     public function destroy($id)
     {
         $note = Note::findOrFail($id);
-        // if (Gate::allows('autherizeUser',  $note)) {
+
             if (Auth::id()==$note->user) {
            
         $note->delete();
@@ -267,7 +244,7 @@ $crawler->filter('title')->each(function( $node) use( &$name){
 
 $request->request->add(['name' => substr($name, 0, 29).'...']);
 $request->request->add(['content' => $url]);
-$request->request->add(['saveButton' => 'Save']);
+
 
 return $this->store($request);
 
