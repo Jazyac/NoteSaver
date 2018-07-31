@@ -26,4 +26,15 @@ class APIController extends Controller
 
     }
 
+
+
+    public function test(){
+ 
+        return response()->json( 'test!');
+   
+   
+   
+       }
+
+
 }

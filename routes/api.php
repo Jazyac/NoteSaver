@@ -20,3 +20,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('/numberOfNotes', 'APIController@numberOfNotes');
 
+Route::get('/test', 'APIController@test');
