@@ -92,9 +92,9 @@
 
                 </div>
 
-<!--             <a href="https://github.com/Jazyac/NoteSaver" target="_blank">
+            <a href="https://github.com/Jazyac/NoteSaver" target="_blank">
               <img class="githubLink" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" >
-        </a> -->
+        </a>
 
             </div>
         </div>
